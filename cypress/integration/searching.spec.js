@@ -15,7 +15,6 @@ describe('When searching for mask', () => {
         homePage.closePopUp();
         homePage.searchInput('mask')
         homePage.searchResultHeader().should('have.text', 'mask')
-cc
     })
 })
    
