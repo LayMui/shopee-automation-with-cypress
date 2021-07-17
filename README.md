@@ -1,12 +1,14 @@
-# How To run this cypress test in headless mode
-npx cypress run -spec cypress/integration/searching.spec.js
+## How To run this cypress test in headless mode
+- [command] - npx cypress run -spec cypress/integration/searching.spec.js
 or
-npx cypress run --spec "**/*.spec.js"
+- [with wildcard] npx cypress run --spec "**/*.spec.js"
 
 To run in head mode (open the cypress IDE)
 npx cypress open 
 
 
-# Todo list:
-# use BDD Gherkins to write out the feature
-# use screenplay pattern
+## Todo list:
+1. Use BDD Gherkins to write out the feature
+2. use screenplay pattern
+
+
