@@ -12,3 +12,7 @@ npx cypress open
 2. use screenplay pattern
 
 
+reference:
+https://www.npmjs.com/package/cypress-cucumber-preprocessor
+
+

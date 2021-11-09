@@ -1,0 +1,18 @@
+{
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "cosmiconfig": "^7.0.1"
+  },
+  "scripts": {
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run",
+    "cypress:run-with-tags": "./node_modules/.bin/cypress-tags run -e"
+  },
+  "devDependencies": {
+    "cypress": "^5.6.0",
+    "cypress-cucumber-preprocessor": "^1.19.2"
+  }
+  
+}

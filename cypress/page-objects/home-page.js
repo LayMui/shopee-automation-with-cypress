@@ -1,4 +1,10 @@
 export class HomePage {
+    static searchInput(arg0) {
+        throw new Error('Method not implemented.')
+    }
+    static closePopUp() {
+        throw new Error('Method not implemented.')
+    }
 
     open() {
         cy.visit('https://shopee.sg/')
