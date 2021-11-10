@@ -1,31 +1,47 @@
-
 /// <reference types="cypress"/>
 import { Given, When, Then, Before } from 'cypress-cucumber-preprocessor/steps';
-import { HomePage } from "../../page-objects/home-page";
+import {Actor, Task, Question, createCypressTask, createCypressQuestion} from 'cypress-screenplay';
 
 const url = 'https://shopee.com'
 
-const homePage = new HomePage()
 
-Before(() => {
-    homePage.open()
+
+const visitHomepage = createCypressTask((cy) => {
+    cy.visit(url);
   });
-  
+
+
+const searchInput = createCypressTask((cy, searchText) => {
+    cy.get('.shopee-popup__close-btn').click()
+    cy.get('.shopee-searchbar-input__input').type(searchText + '{enter}')
+  });
+
+  const searchItems = createCypressQuestion((cy, item) => {
+    cy.get('.shopee-search-result-header__text-highlight')
+    .should('have.text', 'mask');
+  })
+
 
 Given('Alice is at shopee', () => {
-    cy.visit(url)
+    const actor = new Actor()
+    actor
+    .perform(visitTestPage);
+
 });
 
 
 When('she search for the item', (dataTable) => {
     const item = dataTable.hashes()[0].item
-    console.log('item: ' + item)
-    homePage.closePopUp();
-    homePage.searchInput('mask')
+    actor
+    .perform(searchInput, item);
+ 
 });
 
 Then('she should able to get the result on that item', () => { 
-    homePage.searchResultHeader().should('have.text', 'mask');
+    // actor.
+    // ask(searchItems, (items) => {
+    //     expect(items).to.contain('mask')
+    // });
 });
 
 

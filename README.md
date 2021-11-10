@@ -15,4 +15,6 @@ npx cypress open
 reference:
 https://www.npmjs.com/package/cypress-cucumber-preprocessor
 
+https://www.npmjs.com/package/cypress-screenplay
+
 
