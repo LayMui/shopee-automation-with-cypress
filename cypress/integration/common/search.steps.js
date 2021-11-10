@@ -4,7 +4,7 @@ import {Actor, Task, Question, createCypressTask, createCypressQuestion} from 'c
 
 const url = 'https://shopee.com'
 
-
+const actor = new Actor()
 
 const visitHomepage = createCypressTask((cy) => {
     cy.visit(url);
@@ -23,7 +23,7 @@ const searchInput = createCypressTask((cy, searchText) => {
 
 
 Given('Alice is at shopee', () => {
-    const actor = new Actor()
+   
     actor
     .perform(visitTestPage);
 
