@@ -1,0 +1,62 @@
+[
+  {
+    "description": "In order to search for my shopping item\nAs a online shopper Alice\nAlice wants to able to do a search and get the result\n    Background\n        Given Alice is at shopee ",
+    "keyword": "Feature",
+    "name": "search",
+    "line": 1,
+    "id": "search",
+    "tags": [],
+    "uri": "search.feature",
+    "elements": [
+      {
+        "id": "search;search-for-item",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Search For item",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "item"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mask"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 9,
+            "name": "she search for the item",
+            "result": {
+              "status": "undefined",
+              "duration": 95000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "she should able to get the result on that item",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

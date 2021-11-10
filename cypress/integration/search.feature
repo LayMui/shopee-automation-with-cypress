@@ -4,8 +4,8 @@ As a online shopper Alice
 Alice wants to able to do a search and get the result
     Background
         Given Alice is at shopee 
-
-    Scenario Outline: Search For item
+@test
+    Scenario: Search For item
         When she search for the item 
         | item |
         | mask |
