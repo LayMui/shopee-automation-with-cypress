@@ -42,8 +42,8 @@
             "line": 9,
             "name": "she search for the item",
             "result": {
-              "status": "undefined",
-              "duration": 95000000
+              "status": "passed",
+              "duration": 2414000000
             }
           },
           {
@@ -52,7 +52,8 @@
             "line": 12,
             "name": "she should able to get the result on that item",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1340000000
             }
           }
         ]
