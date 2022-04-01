@@ -1,21 +1,17 @@
 export class HomePage {
-    static searchInput(arg0) {
-        throw new Error('Method not implemented.')
-    }
-    static closePopUp() {
-        throw new Error('Method not implemented.')
-    }
-
     open() {
         cy.visit('https://shopee.sg/')
     }
 
     searchInput(searchText) {
         cy.get('.shopee-searchbar-input__input').type(searchText + '{enter}')
+
     }
 
     closePopUp() {
-        cy.get('.shopee-popup__close-btn').click()
+        cy.xpath(
+          '//*[@id="main"]/div/div[3]/div/div/shopee-banner-popup-stateful//div/div/div/div/div/svg/path[1]'
+        ).click()
     }
    
     searchResultHeader() {
