@@ -43,7 +43,7 @@
             "name": "she search for the item",
             "result": {
               "status": "passed",
-              "duration": 6338000000
+              "duration": 3463000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "she should able to get the result on that item",
             "result": {
               "status": "passed",
-              "duration": 1874000000
+              "duration": 3314000000
             }
           }
         ]

@@ -1,5 +1,3 @@
-require('cypress-xpath')
-
 export class HomePage {
   open() {
     cy.visit('https://shopee.sg/')
@@ -10,6 +8,6 @@ export class HomePage {
   }
 
   searchResultHeader() {
-    return cy.get('.shopee-search-result-header__text')
+    return cy.get('.shopee-header-section__header__title')
   }
 }

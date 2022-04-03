@@ -23,5 +23,5 @@ When('she search for the item', (dataTable) => {
 });
 
 Then('she should able to get the result on that item', () => { 
-    homePage.searchResultHeader().should('have.text', 'Search result for \'mask\'');
+    homePage.searchResultHeader().should('have.text', 'shops related to "mask"');
 });
