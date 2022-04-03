@@ -8,6 +8,6 @@ export class HomePage {
   }
 
   searchResultHeader() {
-    return cy.get('.shopee-header-section__header__title')
+    return cy.get('.shopee-search-result-header')
   }
 }
